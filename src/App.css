@@ -1,0 +1,45 @@
+/* src/App.css */
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: white; /* Texto blanco para contraste */
+}
+
+body::before {
+  content: "";
+  background-image: url('./assets/fondo1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2; /* Coloca la imagen detrás del contenido */
+}
+
+body::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7); /* Color negro con opacidad */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Coloca la superposición detrás del contenido pero delante de la imagen */
+}
+
+footer {
+  background-color: #1a1a1d; /* Color oscuro para el fondo */
+  color: white; /* Texto blanco para contraste */
+  padding: 20px 0; /* Espaciado vertical */
+  text-align: center; /* Alineación del texto al centro */
+  position: relative; /* Cambiado a relative para que el footer se mantenga dentro del flujo del documento */
+  width: 100%; /* Ancho completo */
+}

@@ -1,0 +1,135 @@
+/* General styles for the cards */
+.card-container {
+    position: relative;
+    height: 400px;
+    width: 250px;
+    margin: 2em auto;
+    cursor: pointer;
+    background-color: #1f2026;
+    border-radius: 14px;
+    border: 7px double #6c6262;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.card-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-image-container {
+    display: block;
+}
+
+.hero-image {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 14px 14px 30px 30px;
+}
+
+.main-content {
+    padding: 10px;
+    color: white;
+}
+
+.main-content h1 {
+    font-size: 1.5em; /* Ajusta el tamaño de fuente para h1 */
+    margin: 0.4em 0; /* Ajusta el margen */
+}
+
+.main-content h1 a {
+    color: #fda80d;
+    text-decoration: none;
+}
+
+.main-content h2 {
+    font-size: 1.1em; /* Ajusta el tamaño de fuente para h2 */
+    margin: 0.5em 0; /* Ajusta el margen */
+}
+
+.main-content p {
+    color: #bbbbbb;
+    margin: 10px 0;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coin-base, .time-left {
+    display: flex;
+    align-items: center;
+}
+
+.small-image {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.card-attribute {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #333;
+}
+
+.card-attribute img.small-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-attribute h2 {
+    color: #bbbbbb;
+    margin: 0;
+    font-size: 16px;
+}
+
+.card-attribute a {
+    color: #fda80d;
+    text-decoration: none;
+}
+
+.save-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Bungee', sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.not-saved {
+    background-color: #952e08;
+    color: #ffffcc;
+}
+
+.not-saved:hover {
+    background-color: #841203;
+}
+
+.saved {
+    background-color: #394b5c;
+    color: #ffffcc;
+}
+
+.saved:hover {
+    background-color: #272f35;
+}
